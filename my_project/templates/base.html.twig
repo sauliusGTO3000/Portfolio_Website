@@ -2,11 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" href="http://127.0.0.1:8000/styleelements/favicon.png">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/app.css") }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/homepage.css") }}">
+        {% endblock %}
     </head>
     <body>
+        {% block navbar %}
+        {% endblock %}
+        {% block homepage %}
+        {% endblock %}
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('build/js/app.js') }}"></script>
+        {% endblock %}
     </body>
 </html>

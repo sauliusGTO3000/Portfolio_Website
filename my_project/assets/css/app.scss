@@ -1,0 +1,14 @@
+$backgroundColor: unquote('#abc6ccfd');
+$complimentaryColor: unquote('#f3fde5');
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url( /fonts/Poppins-Medium.ttf ); /* IE */
+    src: local("Poppins-Medium"), url("/fonts/Poppins-Medium.ttf"); /*non-IE*/
+}
+
+body {
+    background-color: $backgroundColor;
+    margin: 0;
+}
+

@@ -98,3 +98,46 @@
   pointer-events: none;
 }
 
+@media screen and (max-width: 1666px){
+  .homepageBottom{
+    height: 150px;
+  }
+  .homepageCenter{
+    width: 450px;
+    height: 450px;
+  }
+  #logoWithAnimations{
+    width: 450px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 885px){
+  .homepageBottom{
+    height: 150px;
+    .homepageText{
+      font-size: 12px ;
+    }
+
+  }
+}
+
+@media screen and (max-width: 815px){
+  .homepageBottom{
+    height: 150px;
+    .homepageText{
+      display: none;
+    }
+
+  }
+}
+
+@media screen and (max-width: 463px){
+  .homepageCenter{
+    width: 290px;
+    height: 290px;
+  }
+  #logoWithAnimations{
+    width: 290px;
+    height: 290px;
+  }
+}

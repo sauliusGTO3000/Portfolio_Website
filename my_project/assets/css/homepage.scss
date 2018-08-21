@@ -110,6 +110,38 @@
     height: 450px;
   }
 }
+
+
+@media screen and (max-height: 650px) {
+  .homepageCenter{
+    width: 350px;
+    height: 350px;
+  }
+  #logoWithAnimations{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-height: 555px) {
+  .homepageCenter{
+    width: 300px;
+    height: 300px;
+  }
+  #logoWithAnimations{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .homepageCenter{
+    display: none;
+  }
+  #logoWithAnimations{
+    display: none;
+  }
+}
 @media screen and (max-width: 885px){
   .homepageBottom{
     height: 150px;
@@ -140,3 +172,15 @@
     height: 290px;
   }
 }
+
+@media screen and (max-width: 350px){
+  .homepageCenter{
+    width: 250px;
+    height: 250px;
+  }
+  #logoWithAnimations{
+    width: 250px;
+    height: 250px;
+  }
+}
+

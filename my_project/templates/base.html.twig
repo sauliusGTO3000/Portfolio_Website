@@ -8,6 +8,7 @@
         {% block stylesheets %}
             <link rel="stylesheet" type="text/css" href="{{ asset("build/css/app.css") }}">
             <link rel="stylesheet" type="text/css" href="{{ asset("build/css/homepage.css") }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/about.css") }}">
         {% endblock %}
     </head>
     <body>
@@ -16,6 +17,9 @@
         {% block homepage %}
         {% endblock %}
         {% block body %}{% endblock %}
+        {% block about %}
+            {% include 'about/about.html.twig' %}
+        {% endblock %}
         {% block javascripts %}
             <script src="{{ asset('build/js/app.js') }}"></script>
         {% endblock %}

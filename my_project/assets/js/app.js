@@ -14,7 +14,7 @@ require('../css/app.scss');
 
 $('.bodyWrapper').css({ height: window.innerHeight });
 
-$(window).resize(function () {
-    $('.bodyWrapper').css({ height: window.innerHeight });
-});
+// $(window).resize(function () {
+//     $('.bodyWrapper').css({ height: window.innerHeight });
+// });
 

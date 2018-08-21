@@ -15,13 +15,19 @@
     height: 100px;
 }
 
+#logoWithAnimations{
+  height: 200px;
+  width: 200px;
+}
+
 .homepageLogo{
-  width: 25%;
+  width: 100%;
   float: left;
   text-align: center;
 }
 
 .homepageText{
+  display: none;
   font-size: 14px;
   margin-right: 10%;
   font-family: 'Poppins-Medium';
@@ -39,8 +45,8 @@
 }
 
 .homepageCenter{
-  height: 600px;
-  width: 600px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   //background-color: red;
   position: relative;
@@ -60,28 +66,28 @@
 #top:hover{
   //fill: none!important;
   cursor: pointer;
-  fill: $shapeFill!important;
+  fill: $complimentaryYellow !important;
 
 }
 
 
 #top:hover{
   cursor: pointer;
-  fill: $shapeFill!important;
+  fill: $complimentaryYellow !important;
     d: path("m 16.449118,154.89349 c 0.201384,0.0382 18.348708,-2.21676 43.971876,-5.01147 25.623096,-2.79477 47.259746,-4.87875 47.351336,-4.7639 0.0917,0.11491 -5.38969,30.65018 -8.561888,40.17385 v 0 c -31.964279,1.80375 -63.695044,2.1574 -95.5738012,4.56874 z");
             //m 16.654312,154.14015 c 0.21139,0.0382 18.14348,-2.46333 43.76665,-5.25804 25.62309,-2.79477 47.259738,-4.87876 47.351328,-4.76391 0.0917,0.11492 -5.99988,29.64769 -9.172088,39.17136 l -0.98067,0.69741 c -31.96427,1.80374 -62.10416,2.46247 -93.9829199,4.87381 z");
     }
 
 #middle:hover{
   cursor: pointer;
-  fill: $shapeFill!important;
+  fill: $complimentaryYellow !important;
   d: path("M 17.138882,213.83813 C 8.4008521,200.30713 3.7552021,196.1186 4.1626821,196.03011 c 0.93614,-0.20309 94.5891699,-8.53924 95.2162699,-8.43816 0.806648,0.13008 55.981318,15.3416 55.921878,15.54297 -0.0277,0.0927 -27.21119,14.18524 -60.834378,19.80965 -33.62325,5.62453 -61.87902,10.36386 -62.79066,10.53195 l -1.65739,0.30555 z");
   //M 17.138911,213.83806 C 8.4008811,200.30713 4.45259,193.85214 4.8600705,193.76365 c 0.9361377,-0.20314 93.8918185,-6.27285 94.5189215,-6.17177 0.806658,0.13007 56.330018,24.75602 56.270588,24.95738 -0.0276,0.0927 -27.55989,4.77083 -61.183084,10.39524 -33.623262,5.62453 -61.87904,10.36386 -62.790666,10.53196 l -1.657399,0.30554 z
 }
 
 #bottom:hover{
   cursor: pointer;
-  fill: $shapeFill!important;
+  fill: $complimentaryYellow !important;
   d: path("m 22.454459,279.42338 c 0.20598,-0.68489 3.90067,-9.13978 7.218688,-18.37452 3.747491,-10.43004 9.600388,-17.43944 9.684796,-17.47911 0.314111,-0.14747 117.907827,-18.71759 117.979517,-18.6312 0.15511,0.18681 -10.92032,27.238 -11.30856,27.41281 -0.41545,0.18713 -120.127528,27.58519 -122.592838,28.05745 l -1.356203,0.25974 z");
   //M 17.138911,213.83806 C 8.4008811,200.30713 4.45259,193.85214 4.8600705,193.76365 c 0.9361377,-0.20314 93.8918185,-6.27285 94.5189215,-6.17177 0.806658,0.13007 56.330018,24.75602 56.270588,24.95738 -0.0276,0.0927 -27.55989,4.77083 -61.183084,10.39524 -33.623262,5.62453 -61.87904,10.36386 -62.790666,10.53196 l -1.657399,0.30554 z
 }
@@ -89,98 +95,98 @@
 
 #bottom:hover{
   cursor: pointer;
-  fill: $shapeFill!important;
+  fill: $complimentaryYellow !important;
 }
 
 #about, #portfolio, #contacts{
-  fill: $matchingRed!important;
+  fill: $complimentaryRed !important;
   pointer-events: none;
 }
 
-@media screen and (max-width: 1666px){
-  .homepageBottom{
-    height: 150px;
-  }
-  .homepageCenter{
-    width: 450px;
-    height: 450px;
-  }
-  #logoWithAnimations{
-    width: 450px;
-    height: 450px;
-  }
-}
-
-
-@media screen and (max-height: 650px) {
-  .homepageCenter{
-    width: 350px;
-    height: 350px;
-  }
-  #logoWithAnimations{
-    width: 350px;
-    height: 350px;
-  }
-}
-
-@media screen and (max-height: 555px) {
-  .homepageCenter{
-    width: 300px;
-    height: 300px;
-  }
-  #logoWithAnimations{
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@media screen and (max-height: 500px) {
-  .homepageCenter{
-    display: none;
-  }
-  #logoWithAnimations{
-    display: none;
-  }
-}
-@media screen and (max-width: 885px){
-  .homepageBottom{
-    height: 150px;
-    .homepageText{
-      font-size: 12px ;
-    }
-
-  }
-}
-
-@media screen and (max-width: 815px){
-  .homepageBottom{
-    height: 150px;
-    .homepageText{
-      display: none;
-    }
-
-  }
-}
-
-@media screen and (max-width: 463px){
-  .homepageCenter{
-    width: 290px;
-    height: 290px;
-  }
-  #logoWithAnimations{
-    width: 290px;
-    height: 290px;
-  }
-}
-
-@media screen and (max-width: 350px){
-  .homepageCenter{
-    width: 250px;
-    height: 250px;
-  }
-  #logoWithAnimations{
-    width: 250px;
-    height: 250px;
-  }
-}
-
+//@media screen and (max-width: 1666px){
+//  .homepageBottom{
+//    height: 150px;
+//  }
+//  .homepageCenter{
+//    width: 450px;
+//    height: 450px;
+//  }
+//  #logoWithAnimations{
+//    width: 450px;
+//    height: 450px;
+//  }
+//}
+//
+//
+//@media screen and (max-height: 650px) {
+//  .homepageCenter{
+//    width: 350px;
+//    height: 350px;
+//  }
+//  #logoWithAnimations{
+//    width: 350px;
+//    height: 350px;
+//  }
+//}
+//
+//@media screen and (max-height: 555px) {
+//  .homepageCenter{
+//    width: 300px;
+//    height: 300px;
+//  }
+//  #logoWithAnimations{
+//    width: 300px;
+//    height: 300px;
+//  }
+//}
+//
+//@media screen and (max-height: 500px) {
+//  .homepageCenter{
+//    display: none;
+//  }
+//  #logoWithAnimations{
+//    display: none;
+//  }
+//}
+//@media screen and (max-width: 885px){
+//  .homepageBottom{
+//    height: 150px;
+//    .homepageText{
+//      font-size: 12px ;
+//    }
+//
+//  }
+//}
+//
+//@media screen and (max-width: 815px){
+//  .homepageBottom{
+//    height: 150px;
+//    .homepageText{
+//      display: none;
+//    }
+//
+//  }
+//}
+//
+//@media screen and (max-width: 463px){
+//  .homepageCenter{
+//    width: 290px;
+//    height: 290px;
+//  }
+//  #logoWithAnimations{
+//    width: 290px;
+//    height: 290px;
+//  }
+//}
+//
+//@media screen and (max-width: 350px){
+//  .homepageCenter{
+//    width: 250px;
+//    height: 250px;
+//  }
+//  #logoWithAnimations{
+//    width: 250px;
+//    height: 250px;
+//  }
+//}
+//

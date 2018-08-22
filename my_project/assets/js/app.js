@@ -14,6 +14,21 @@ require('../css/app.scss');
 
 $('.bodyWrapper').css({ height: window.innerHeight });
 
+
+window.addEventListener('orientationchange', doOnOrientationChange);
+
+function doOnOrientationChange()
+{
+    if (screen.height > screen.width) {
+        console.log('portrait');
+        $('.bodyWrapper').css({ height: screen.height });
+    } else {
+        console.log('landscape');
+        $('.bodyWrapper').css({ height: screen.height });
+    }
+}
+
+
 // $(window).resize(function () {
 //     $('.bodyWrapper').css({ height: window.innerHeight });
 // });

@@ -16,7 +16,8 @@ $('.bodyWrapper').css({ height: window.innerHeight });
 
 $(window).resize(function () {
     var oldheight = $('.bodyWrapper').height();
-    if(window.innerHeight - oldheight > 100){
+    var oldWidth = $('.bodyWrapper').width();
+    if((window.innerHeight - oldheight > 100) || (window.innerWidth - oldWidth > 100)){
         if(window.innerWidth<window.innerHeight){
 
             $('.bodyWrapper').css({ height: window.innerHeight });

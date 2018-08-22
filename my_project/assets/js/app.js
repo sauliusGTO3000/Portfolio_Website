@@ -11,20 +11,20 @@ require('../css/app.scss');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // var $ = require('jquery');
 
-
 $('.bodyWrapper').css({ height: window.innerHeight });
 
+
 $(window).resize(function () {
-    if(window.innerWidth<window.innerHeight){
-        console.log("orientation changed v2");
-        $('.bodyWrapper').css({ height: window.innerHeight });
-    }
-    if(window.innerWidth>window.innerHeight){
-        console.log("orientation changed v2");
-        $('.bodyWrapper').css({ height: window.innerHeight });
-    }
+    var oldheight = $('.bodyWrapper').height();
+    if(window.innerHeight - oldheight > 50){
+        if(window.innerWidth<window.innerHeight){
 
-
+            $('.bodyWrapper').css({ height: window.innerHeight });
+        }
+        if(window.innerWidth>window.innerHeight){
+            $('.bodyWrapper').css({ height: window.innerHeight });
+        }
+    }
 });
 // window.addEventListener('orientationchange', doOnOrientationChange);
 //

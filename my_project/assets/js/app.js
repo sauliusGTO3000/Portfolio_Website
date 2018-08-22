@@ -19,13 +19,8 @@ window.addEventListener('orientationchange', doOnOrientationChange);
 
 function doOnOrientationChange()
 {
-    if (screen.height > screen.width) {
-        console.log('portrait');
-        $('.bodyWrapper').css({ height: screen.height });
-    } else {
-        console.log('landscape');
-        $('.bodyWrapper').css({ height: screen.height });
-    }
+        // console.log('orientation changed');
+    $('.bodyWrapper').css({ height: window.innerWidth });
 }
 
 

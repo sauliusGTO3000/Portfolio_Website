@@ -19,8 +19,8 @@ window.addEventListener('orientationchange', doOnOrientationChange);
 
 function doOnOrientationChange()
 {
-        // console.log('orientation changed');
-    $('.bodyWrapper').css({ height: window.innerWidth });
+    console.log('orientation changed');
+    $('.bodyWrapper').css({height: window.innerWidth });
 }
 
 

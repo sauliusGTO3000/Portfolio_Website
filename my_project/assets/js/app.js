@@ -14,14 +14,27 @@ require('../css/app.scss');
 
 $('.bodyWrapper').css({ height: window.innerHeight });
 
+$(window).resize(function () {
+    if(window.innerWidth<window.innerHeight){
+        console.log("orientation changed v2");
+        $('.bodyWrapper').css({ height: window.innerHeight });
+    }
+    if(window.innerWidth>window.innerHeight){
+        console.log("orientation changed v2");
+        $('.bodyWrapper').css({ height: window.innerHeight });
+    }
 
-window.addEventListener('orientationchange', doOnOrientationChange);
 
-function doOnOrientationChange()
-{
-    console.log('orientation changed');
-    $('.bodyWrapper').css({height: window.innerWidth });
-}
+});
+// window.addEventListener('orientationchange', doOnOrientationChange);
+//
+// function doOnOrientationChange()
+// {
+//     console.log('orientation changed');
+//     $('.bodyWrapper').css({height: window.innerWidth });
+// }
+
+
 
 
 // $(window).resize(function () {

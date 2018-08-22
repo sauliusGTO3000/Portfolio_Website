@@ -26,7 +26,7 @@ if (jQuery('body').hasClass("touch-device")) {
 //Loading height on touch-device
     function calcFullHeight() {
         jQuery('.bodyWrapper').css("height", $(window).height());
-        jQuery('.hompageTop').css("height", $(window).height()-150);
+        jQuery('.hompageTop').css("height", $(window).height()-100);
     }
 
     (function($) {

@@ -17,14 +17,40 @@ $('.bodyWrapper').css({ height: window.innerHeight });
 $(window).resize(function () {
     var oldheight = $('.bodyWrapper').height();
     var oldWidth = $('.bodyWrapper').width();
-    if((window.innerHeight - oldheight > 100) || (window.innerWidth - oldWidth < 100)){
-        if(window.innerWidth<window.innerHeight){
-            $('.bodyWrapper').css({ height: window.innerHeight });
-        }
-        if(window.innerWidth>window.innerHeight){
-            $('.bodyWrapper').css({ height: window.innerHeight });
-        }
+
+    console.log(oldWidth);
+    console.log(oldheight);
+
+    if(oldWidth==oldheight){
+        $('.bodyWrapper').css({ height: window.innerHeight });
+        console.log("changes");
     }
+    // if((window.innerHeight - oldheight > 100)){
+    //
+    //     if(window.innerWidth<window.innerHeight){
+    //         $('.bodyWrapper').css({ height: window.innerHeight });
+    //         oldheight = window.innerHeight;
+    //         console.log("portrait");
+    //     }
+    //     if(window.innerWidth<window.innerheight){
+    //         $('.bodyWrapper').css({ height: window.innerWidth });
+    //         oldWidth = window.innerWidth;
+    //     }
+    // }
+    // if((window.innerHeight - oldheight < 100)){
+    //     console.log("landscape");
+    //     $('.bodyWrapper').css({ height: window.innerHeight });
+    //     if(window.innerWidth<window.innerHeight){
+    //         $('.bodyWrapper').css({ height: window.innerHeight });
+    //         oldheight = window.innerHeight;
+    //         console.log("portrait");
+    //     }
+    //     if(window.innerWidth<window.innerheight){
+    //         $('.bodyWrapper').css({ height: window.innerWidth });
+    //         oldWidth = window.innerHeight;
+    //         console.log("landscape");
+    //     }
+    // }
 });
 // window.addEventListener('orientationchange', doOnOrientationChange);
 //

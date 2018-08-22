@@ -222,16 +222,16 @@
   }
 }
 
-//@media screen and (min-width: 320px) and (min-height: 568px) and (orientation: landscape){
-//  .homepageCenter{
-//    width: 200px;
-//    height: 200px;
-//  }
-//  #logoWithAnimations{
-//    width: 200px;
-//    height: 200px;
-//  }
-//}
+@media screen and (max-height: 320px) and (max-width: 568px){
+  .homepageCenter{
+    width: 200px;
+    height: 200px;
+  }
+  #logoWithAnimations{
+    width: 200px;
+    height: 200px;
+  }
+}
 //@media screen and (max-width: 1666px){
 //  .homepageBottom{
 //    height: 150px;

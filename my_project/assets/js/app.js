@@ -11,20 +11,58 @@ require('../css/app.scss');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // var $ = require('jquery');
 
-$('.bodyWrapper').css({ height: window.innerHeight });
+$('.bodyWrapper').css("width",window.outerWidth) ;
+$('.bodyWrapper').css("height",window.outerHeight) ;
+
+$('.hompageTop').css("width",window.outerWidth) ;
+$('.hompageTop').css("height",window.outerHeight) ;
+
+
+var oldheight = $('.bodyWrapper').height();
+var oldWidth = $('.bodyWrapper').width();
+console.log("_____START___");
+console.log("old width: " + oldWidth);
+console.log("new width: "+ window.outerWidth);
+console.log("__________");
+console.log("old height: " + oldheight);
+console.log("new height: " + window.outerHeight);
+console.log("_____END___");
 
 
 $(window).resize(function () {
-    var oldheight = $('.bodyWrapper').height();
-    var oldWidth = $('.bodyWrapper').width();
 
-    console.log(oldWidth);
-    console.log(oldheight);
 
-    if(oldWidth==oldheight){
-        $('.bodyWrapper').css({ height: window.innerHeight });
-        console.log("changes");
-    }
+
+        var oldheight = $('.bodyWrapper').height();
+        var oldWidth = $('.bodyWrapper').width();
+
+        $('.bodyWrapper').css("width", window.outerWidth);
+        $('.bodyWrapper').css("height", window.outerHeight);
+
+        $('.hompageTop').css("width", window.outerWidth);
+        $('.hompageTop').css("height", window.outerHeight);
+
+    // console.log("_____START___");
+    // console.log("old width: " + oldWidth);
+    // console.log("new width: "+ window.outerWidth);
+    // console.log("__________");
+    // console.log("old height: " + oldheight);
+    // console.log("new height: " + window.outerHeight);
+    // console.log("_____END___");
+    //
+    // if(oldWidth==window.outerHeight && oldheight == window.outerWidth){
+    //     console.log("changed");
+    //
+    //     $('.bodyWrapper').setAttribute("width",window.outerWidth);
+    //     $('.bodyWrapper').setAttribute("height",window.outerHeight);
+    // }
+
+
+    // if(oldheight==window.outerWidth){
+    //     $('.hompageTop').css({ height: oldheight });
+    //     $('.hompageTop').css({ width: window.outerHeight });
+    //     console.log("changes");
+    // }
     // if((window.innerHeight - oldheight > 100)){
     //
     //     if(window.innerWidth<window.innerHeight){

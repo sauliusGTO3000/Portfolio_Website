@@ -9,6 +9,7 @@
             <link rel="stylesheet" type="text/css" href="{{ asset("build/css/app.css") }}">
             <link rel="stylesheet" type="text/css" href="{{ asset("build/css/homepage.css") }}">
             <link rel="stylesheet" type="text/css" href="{{ asset("build/css/about.css") }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/projects.css") }}">
         {% endblock %}
     </head>
     <body>
@@ -19,6 +20,9 @@
         {% block body %}{% endblock %}
         {% block about %}
             {% include 'about/about.html.twig' %}
+        {% endblock %}
+        {% block projects %}
+            {% include 'projects/projects.html.twig' %}
         {% endblock %}
         {% block javascripts %}
             <script src="{{ asset('build/js/app.js') }}"></script>

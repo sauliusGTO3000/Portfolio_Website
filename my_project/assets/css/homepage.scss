@@ -189,6 +189,16 @@
     height: 350px;
   }
 }
+@media screen and (min-width: 325px){
+  .homepageCenter{
+    width: 300px;
+    height: 300px;
+  }
+  #logoWithAnimations{
+    width: 300px;
+    height: 300px;
+  }
+}
 
 @media screen and (min-width: 375px) and (min-height: 667px){
   .homepageCenter{
@@ -196,6 +206,11 @@
     height: 350px;
   }
   #logoWithAnimations{
+    width: 350px;
+    height: 350px;
+  }
+
+  #frontPictureWrapper{
     width: 350px;
     height: 350px;
   }
@@ -208,6 +223,10 @@
     height: 340px;
   }
   #logoWithAnimations{
+    width: 340px;
+    height: 340px;
+  }
+  #frontPictureWrapper{
     width: 340px;
     height: 340px;
   }
@@ -225,9 +244,16 @@
     height: 300px;
   }
 
+  #frontPictureWrapper{
+    width: 300px;
+    height: 300px;
+  }
+
   .bodyWrapper{
     height: 568px;
   }
+
+
 }
 
 //@media screen and (max-height: 320px) and (max-width: 568px){

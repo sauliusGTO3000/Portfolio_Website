@@ -1,0 +1,25 @@
+@import "app.scss";
+.projectsSection{
+  background-color: $complimentaryWhite;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.projectsTitle{
+  color: white;
+  font-family: Poppins-Medium;
+
+}
+
+.projectsContents{
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+
+  font-family: Poppins-Medium;
+  background-color: #c62828;
+
+  box-shadow: 3px 0px 0px #4b0d17;
+}
+

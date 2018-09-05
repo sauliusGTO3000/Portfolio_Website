@@ -1,31 +1,35 @@
 @import "app.scss";
-.projectsSection{
+.contactsSection{
   background-color: $complimentaryWhite;
   width: 100%;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.projectsTitle{
+.contactsTitle{
   color: white;
   font-family: Poppins-Medium;
 
 }
 
-.projectsContents{
+.contactsContents{
   max-width: 800px;
   margin: auto;
   padding: 50px;
 
   font-family: Poppins-Medium;
-  background-color: #c62828;
+  background-color: $backgroundColor;
 
   box-shadow: 3px 0px 0px #4b0d17;
   a{
     color: $complimentaryWhite;
   }
-
+  h2{
+    color: black;
+  }
   h3{
     padding-left: 5px;
+    color: black;
   }
 }
 

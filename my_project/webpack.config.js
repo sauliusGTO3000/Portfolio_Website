@@ -24,6 +24,7 @@ Encore
     .addStyleEntry('css/homepage', './assets/css/homepage.scss')
     .addStyleEntry('css/about', './assets/css/about.scss')
     .addStyleEntry('css/projects', './assets/css/projects.scss')
+    .addStyleEntry('css/contacts', './assets/css/contacts.scss')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

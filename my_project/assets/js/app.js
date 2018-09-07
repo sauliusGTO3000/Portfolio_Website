@@ -14,6 +14,16 @@ require('../css/app.scss');
 //     $('.bodyWrapper').css("height", window.innerHeight);
 // });
 
+
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
 if ("ontouchstart" in document.documentElement) {
     document.body.classList.add('touch-device');
 
